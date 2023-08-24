@@ -1,12 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { State, Action, StateContext } from '@ngxs/store';
 import { {{pascalCase name}}Action } from './{{dashCase name}}.actions';
 
-export class {{pascalCase name}}StateModel {
+export interface {{pascalCase name}}StateModel {
   public items: string[];
 }
 
-const defaults = {
+const defaults: {{pascalCase name}}StateModel = {
   items: []
 };
 
